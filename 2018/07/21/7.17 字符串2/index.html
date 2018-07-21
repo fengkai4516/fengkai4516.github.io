@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="title: 7.17  字符串 2tags: 总结toc: true  总结 1.字符串分割string string.split(str=’’,num=string.count(str))指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个自子字符串string str.join(list)将列表以指定的字符拼接成一个字符串（join是split的逆操作）string s">
+  <meta name="description" content="title: 7.17  字符串 2tags: 总结 toc: true1.字符串分割string string.split(str=’’,num=string.count(str))指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个自子字符串string str.join(list)将列表以指定的字符拼接成一个字符串（join是split的逆操作）string str.z">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/2018/07/21/7.17 字符串2/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: 7.17  字符串 2tags: 总结toc: true  总结 1.字符串分割string string.split(str=’’,num=string.count(str))指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个自子字符串string str.join(list)将列表以指定的字符拼接成一个字符串（join是split的逆操作）string s">
+<meta property="og:description" content="title: 7.17  字符串 2tags: 总结 toc: true1.字符串分割string string.split(str=’’,num=string.count(str))指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个自子字符串string str.join(list)将列表以指定的字符拼接成一个字符串（join是split的逆操作）string str.z">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-21T03:58:57.582Z">
+<meta property="og:updated_time" content="2018-07-21T06:00:43.477Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="title: 7.17  字符串 2tags: 总结toc: true  总结 1.字符串分割string string.split(str=’’,num=string.count(str))指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个自子字符串string str.join(list)将列表以指定的字符拼接成一个字符串（join是split的逆操作）string s">
+<meta name="twitter:description" content="title: 7.17  字符串 2tags: 总结 toc: true1.字符串分割string string.split(str=’’,num=string.count(str))指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个自子字符串string str.join(list)将列表以指定的字符拼接成一个字符串（join是split的逆操作）string str.z">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -160,10 +160,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<p>title: 7.17  字符串 2<br>tags: 总结<br>toc: true</p>
-<hr>
-<pre><code>总结
-</code></pre><p>1.字符串分割<br>string string.split(str=’’,num=string.count(str))<br>指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个自子字符串<br>string str.join(list)<br>将列表以指定的字符拼接成一个字符串（join是split的逆操作）<br>string str.zfill(width)<br>返回指定长度的字符串，原字符串右对齐，前面填充0<br>string str.center(width[,fillchar])<br>原字符串居中，并使用空格填充至长度width，默认为空格<br>Bool str.ljust(width[,fillchar])<br>返回一个原字符串左对齐，并使用空格填充至指定宽度，如果宽度小与原字符串的长度则返回原字符串<br>Bool str.rjust(width[,fillchar])<br>返回原字符串右对齐<br>str1=u’123456’<br>print(str1.isnumeric())</p>
+<p>title: 7.17  字符串 2<br>tags: 总结</p>
+<h2 id="toc-true"><a href="#toc-true" class="headerlink" title="toc: true"></a>toc: true</h2><p>1.字符串分割<br>string string.split(str=’’,num=string.count(str))<br>指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个自子字符串<br>string str.join(list)<br>将列表以指定的字符拼接成一个字符串（join是split的逆操作）<br>string str.zfill(width)<br>返回指定长度的字符串，原字符串右对齐，前面填充0<br>string str.center(width[,fillchar])<br>原字符串居中，并使用空格填充至长度width，默认为空格<br>Bool str.ljust(width[,fillchar])<br>返回一个原字符串左对齐，并使用空格填充至指定宽度，如果宽度小与原字符串的长度则返回原字符串<br>Bool str.rjust(width[,fillchar])<br>返回原字符串右对齐<br>str1=u’123456’<br>print(str1.isnumeric())</p>
 <p>str2=”how,old,are,you?”<br>newlist=str2.split(‘,’,5)<br>print(newlist)<br>newstr=’ ‘.join(newlist)<br>print(newstr)</p>
 <p>str2=”how,old,are,you?”<br>print(str2.zfill(20))<br>print(str2.center(30))<br>print(str2.rjust(20))<br>string string.strip([chars])<br>移除字符串头尾指定的字符（默认为空格或换行）<br>string str.lstrip([chars])<br>移除字符串左侧指定的字符<br>string str.rstrip([chars])<br>移除字符串右侧指定的字符<br>str3=input(‘输入你的用户名：’)<br>print(str3.strip())<br>string str.replace(old, new[, max])<br>把字符串中的 old（旧字符串） 替换成 new(新字符串)，如果指定第三个参数max，则替换不超过 max 次<br>str4=’This is a small island’<br>print(str4.replace(‘is’,’are’,1))<br>字符串的替换<br>1、先使用maketrans()创建映射列表，在使用translate() 替换<br>oldstr=’的他’<br>newstr=’得她’<br>rule=’’.maketrans(oldstr,newstr)<br>str=’我的你的他的名字都是中文的’<br>print(str.translate(rule))<br>（替换的两个字符串长度必须一致）<br>2、str.format（）<br>①通过下标访问<br>②填充与对齐<br>格式：{：}号后面带填充的字符，只能是一个字符，不指定则默认是用空格填充   &gt;右对齐   &lt;左对齐  ^居中对齐   {:.2f}精度计算，保留两位小数   {：b}二进制  {:d}十进制  {:o}八进制  {:x}十六进制</p>
 <h1 id="关键词参数-键-值"><a href="#关键词参数-键-值" class="headerlink" title="关键词参数 键-值"></a>关键词参数 键-值</h1><p>str1=’我的名字叫{name}，我的年龄{age}’<br>res=str1.format(age=’18’,name=’Jack’)<br>print(res)</p>
