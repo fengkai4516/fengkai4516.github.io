@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="title: 7.17  字符串用法补充tags: 总结 toc: true1.字符串分割string string.split(str=’’,num=string.count(str))指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个自子字符串string str.join(list)将列表以指定的字符拼接成一个字符串（join是split的逆操作）string str">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/07/21/7.17 字符串用法补充/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="title: 7.17  字符串用法补充tags: 总结 toc: true1.字符串分割string string.split(str=’’,num=string.count(str))指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个自子字符串string str.join(list)将列表以指定的字符拼接成一个字符串（join是split的逆操作）string str">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-21T06:04:36.778Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="title: 7.17  字符串用法补充tags: 总结 toc: true1.字符串分割string string.split(str=’’,num=string.count(str))指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个自子字符串string str.join(list)将列表以指定的字符拼接成一个字符串（join是split的逆操作）string str">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,222 +154,161 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-7.17 字符串用法补充" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: 7.17  字符串用法补充<br>tags: 总结</p>
+<h2 id="toc-true"><a href="#toc-true" class="headerlink" title="toc: true"></a>toc: true</h2><p>1.字符串分割<br>string string.split(str=’’,num=string.count(str))<br>指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个自子字符串<br>string str.join(list)<br>将列表以指定的字符拼接成一个字符串（join是split的逆操作）<br>string str.zfill(width)<br>返回指定长度的字符串，原字符串右对齐，前面填充0<br>string str.center(width[,fillchar])<br>原字符串居中，并使用空格填充至长度width，默认为空格<br>Bool str.ljust(width[,fillchar])<br>返回一个原字符串左对齐，并使用空格填充至指定宽度，如果宽度小与原字符串的长度则返回原字符串<br>Bool str.rjust(width[,fillchar])<br>返回原字符串右对齐<br>str1=u’123456’<br>print(str1.isnumeric())</p>
+<p>str2=”how,old,are,you?”<br>newlist=str2.split(‘,’,5)<br>print(newlist)<br>newstr=’ ‘.join(newlist)<br>print(newstr)</p>
+<p>str2=”how,old,are,you?”<br>print(str2.zfill(20))<br>print(str2.center(30))<br>print(str2.rjust(20))<br>string string.strip([chars])<br>移除字符串头尾指定的字符（默认为空格或换行）<br>string str.lstrip([chars])<br>移除字符串左侧指定的字符<br>string str.rstrip([chars])<br>移除字符串右侧指定的字符<br>str3=input(‘输入你的用户名：’)<br>print(str3.strip())<br>string str.replace(old, new[, max])<br>把字符串中的 old（旧字符串） 替换成 new(新字符串)，如果指定第三个参数max，则替换不超过 max 次<br>str4=’This is a small island’<br>print(str4.replace(‘is’,’are’,1))<br>字符串的替换<br>1、先使用maketrans()创建映射列表，在使用translate() 替换<br>oldstr=’的他’<br>newstr=’得她’<br>rule=’’.maketrans(oldstr,newstr)<br>str=’我的你的他的名字都是中文的’<br>print(str.translate(rule))<br>（替换的两个字符串长度必须一致）<br>2、str.format（）<br>①通过下标访问<br>②填充与对齐<br>格式：{：}号后面带填充的字符，只能是一个字符，不指定则默认是用空格填充   &gt;右对齐   &lt;左对齐  ^居中对齐   {:.2f}精度计算，保留两位小数   {：b}二进制  {:d}十进制  {:o}八进制  {:x}十六进制</p>
+<h1 id="关键词参数-键-值"><a href="#关键词参数-键-值" class="headerlink" title="关键词参数 键-值"></a>关键词参数 键-值</h1><p>str1=’我的名字叫{name}，我的年龄{age}’<br>res=str1.format(age=’18’,name=’Jack’)<br>print(res)</p>
+<p>#非关键词参数<br>str1=’我的名字叫{}，我的年龄{},身高{}’<br>res=str1.format(‘Rose’,’20’,’180’)<br>print(res)</p>
+<p>#多次使用<br>str1=’我的名字叫{0}，我的年龄{1},小明和我一样大{1}’<br>res=str1.format(‘小花’,18)<br>print(res)</p>
+<p>str1=’我的名字叫{0[0]}，我的年龄{0[1]},小明和我一样大{0[1]}’<br>res=str1.format((‘小花’,18))<br>print(res)<br>str1=’我的名字叫{0[n]}，我的年龄{0[a]},小明和我一样大{0[a]}’<br>res=str1.format({‘n’:’小花’,’a’:’18’})<br>print(res)</p>
+<p>str1=’巴拉巴拉小魔仙,{:&amp;^11}’<br>res=str1.format(‘bala’)<br>print(res)</p>
+<p>str=’π的值为：{:.3f}’<br>res=str.format(3.1415926)<br>print(res)</p>
+<p>str=’num：{}’<br>str=’num：{:b}’<br>str=’num：{:d}’<br>str=’num：{:o}’<br>str=’num：{:x}’<br>res=str.format(10)<br>print(res)</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/21/7.16字符串/" class="archive-article-date">
-  	<time datetime="2018-07-21T03:27:44.161Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/21/7.16字符串/">7.16 字符串</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
-        		</li>
-      		
-		</ul>
-	</div>
+      
 
-          
-
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/21/7.17 字符串用法补充/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/21/7.17 字符串用法补充/" class="archive-article-date">
-  	<time datetime="2018-07-21T03:27:43.634Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-21</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2018/07/21/7.16字符串/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          7.16 字符串
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/07/21/7.18math 列表/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">7.18  math 列表</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+        
+        
+    </div>
+</aside>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/21/7.18math 列表/" class="archive-article-date">
-  	<time datetime="2018-07-21T03:27:42.569Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-21</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/21/7.18math 列表/">7.18  math 列表</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/21/7.19元组 字典/" class="archive-article-date">
-  	<time datetime="2018-07-21T03:27:32.918Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/21/7.19元组 字典/">7.19  元组  字典</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/21/7.20集合/" class="archive-article-date">
-  	<time datetime="2018-07-21T03:05:36.866Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/21/7.20集合/">7.20  集合</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/18/hello-world/" class="archive-article-date">
-  	<time datetime="2018-07-18T09:36:24.926Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/18/hello-world/">hello world</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -388,8 +331,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
