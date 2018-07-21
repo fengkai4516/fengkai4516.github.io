@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="title: 7.17  字符串2tags: 总结toc: true  总结 1.字符串分割string string.split(str=’’,num=string.count(str))指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个自子字符串string str.join(list)将列表以指定的字符拼接成一个字符串（join是split的逆操作）string st">
+  <meta name="description" content="title: 7.17  字符串 2tags: 总结toc: true  总结 1.字符串分割string string.split(str=’’,num=string.count(str))指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个自子字符串string str.join(list)将列表以指定的字符拼接成一个字符串（join是split的逆操作）string s">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/2018/07/21/7.17 字符串/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: 7.17  字符串2tags: 总结toc: true  总结 1.字符串分割string string.split(str=’’,num=string.count(str))指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个自子字符串string str.join(list)将列表以指定的字符拼接成一个字符串（join是split的逆操作）string st">
+<meta property="og:description" content="title: 7.17  字符串 2tags: 总结toc: true  总结 1.字符串分割string string.split(str=’’,num=string.count(str))指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个自子字符串string str.join(list)将列表以指定的字符拼接成一个字符串（join是split的逆操作）string s">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-21T03:57:00.513Z">
+<meta property="og:updated_time" content="2018-07-21T03:58:57.582Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="title: 7.17  字符串2tags: 总结toc: true  总结 1.字符串分割string string.split(str=’’,num=string.count(str))指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个自子字符串string str.join(list)将列表以指定的字符拼接成一个字符串（join是split的逆操作）string st">
+<meta name="twitter:description" content="title: 7.17  字符串 2tags: 总结toc: true  总结 1.字符串分割string string.split(str=’’,num=string.count(str))指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个自子字符串string str.join(list)将列表以指定的字符拼接成一个字符串（join是split的逆操作）string s">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -160,7 +160,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<p>title: 7.17  字符串2<br>tags: 总结<br>toc: true</p>
+<p>title: 7.17  字符串 2<br>tags: 总结<br>toc: true</p>
 <hr>
 <pre><code>总结
 </code></pre><p>1.字符串分割<br>string string.split(str=’’,num=string.count(str))<br>指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个自子字符串<br>string str.join(list)<br>将列表以指定的字符拼接成一个字符串（join是split的逆操作）<br>string str.zfill(width)<br>返回指定长度的字符串，原字符串右对齐，前面填充0<br>string str.center(width[,fillchar])<br>原字符串居中，并使用空格填充至长度width，默认为空格<br>Bool str.ljust(width[,fillchar])<br>返回一个原字符串左对齐，并使用空格填充至指定宽度，如果宽度小与原字符串的长度则返回原字符串<br>Bool str.rjust(width[,fillchar])<br>返回原字符串右对齐<br>str1=u’123456’<br>print(str1.isnumeric())</p>
@@ -172,8 +172,7 @@
 <p>str1=’我的名字叫{0[0]}，我的年龄{0[1]},小明和我一样大{0[1]}’<br>res=str1.format((‘小花’,18))<br>print(res)<br>str1=’我的名字叫{0[n]}，我的年龄{0[a]},小明和我一样大{0[a]}’<br>res=str1.format({‘n’:’小花’,’a’:’18’})<br>print(res)</p>
 <p>str1=’巴拉巴拉小魔仙,{:&amp;^11}’<br>res=str1.format(‘bala’)<br>print(res)</p>
 <p>str=’π的值为：{:.3f}’<br>res=str.format(3.1415926)<br>print(res)</p>
-<p>str=’num：{}’</p>
-<h1 id="str-’num：-b-’"><a href="#str-’num：-b-’" class="headerlink" title="str=’num：{:b}’"></a>str=’num：{:b}’</h1><h1 id="str-’num：-d-’"><a href="#str-’num：-d-’" class="headerlink" title="str=’num：{:d}’"></a>str=’num：{:d}’</h1><h1 id="str-’num：-o-’"><a href="#str-’num：-o-’" class="headerlink" title="str=’num：{:o}’"></a>str=’num：{:o}’</h1><p>str=’num：{:x}’<br>res=str.format(10)<br>print(res)</p>
+<p>str=’num：{}’<br>str=’num：{:b}’<br>str=’num：{:d}’<br>str=’num：{:o}’<br>str=’num：{:x}’<br>res=str.format(10)<br>print(res)</p>
 
       
 
