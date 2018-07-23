@@ -400,19 +400,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>总结<br>元组只可以访问，不能对其中的元素进行修改，增添，删除<br>元组常用函数:len()  max()  min()  tuple()  index()获取索引值<br>Count()计算元素出现次数<br>元组推导式：<br>格式：变量=（i for i in 元组）<br>变量=（i for i in 元组 if 条件表达式）<br>变量=（x+y for x in 元组1  for y  in 元组2  [if 条件表达式]）<br>x+y可以是其他操作<br>变量互换：变量1，变量2=变量2，变量1</p>
-<p>字典：Dict 字典<br>Collections.defaultdict 默认字典<br>Collections.orderedict 有序字典<br>字典定义方式：创建空字典  变量={}    变量=dict()<br>创建单个元素的字典<br>    变量={‘键’,’值’}<br>创建多个元素的字典<br>    变量={键:值,键:值…..}    变量=dict({键:值,键:值…..})<br>    变量=dict({键=值,键值…..})<br>变量=dict([(键,值),(键,值)……]})<br>字典查找：<br>dict.items（）   遍历字典<br>Dict.keys()     返回字典所有的键<br>Dict.values     返回字典中的所有值<br>dict.get(key, default=None)<br>返回指定键的值，如果值不在字典中返回default值<br>dict.setdefault(key, default=None)<br>和get()类似, 但如果键不存在于字典中，将会添加键并将值设为default，有返回值，返回值为元素本身<br>dict.fromkeys(seq[, val])<br>创建一个新字典，以序列 seq 中元素做字典的键，val 为字典所有键对应的初始值<br>dict.<strong>contains</strong>(key)<br>如果键在字典dict里返回true，否则返回false<br>shop={‘口红’:[‘Dior’,’MAC’,’YSL’],’香水’:’香奈儿’,’包包’:’LV’,’衣服’:’纪梵希’}</p>
-<p>#字典循环输出键，值</p>
-<p>#print(shop[‘口红’][1])<br>for i in shop.keys():<br>print(i)<br>for i in shop.values():<br>print(i)</p>
-<p>#get通过键获取指定值，不存在则显示default<br>print(shop)<br>print(shop.get(‘鞋子’,’没有鞋子’))</p>
-<p>#get通过键获取指定值，不存在则将default值添加到字典中<br>print(shop.setdefault(‘鞋子’,’李宁’))<br>print(shop)</p>
-<p>#根据shop字典的键值，生成一个新的字典<br>res={}.fromkeys(shop,’None’)<br>keys=[‘a’,’b’,’c’]<br>res={}.fromkeys(keys,’None’)<br>res[‘口红’]=’YSL’<br>print(res)</p>
-<p>#<strong>contains</strong>通过下标获取指定的值<br>print(shop.<strong>contains</strong>(‘衣服’))<br>字典内置方法：<br>Pop(key[,default])  删除key值，key值必须给出否则，返回default<br>Popitem()  随机删除字典一对键值，不能使用参数<br>dict.clear（）|del  删除所有元素<br>Dict.update(dict2)  把dict2的键值加到dict中</p>
-<p>#pop删除键对应的值，如值是一个列表，则需要使用下标进行删除</p>
-<h1 id="print-shop-‘口红’-pop-2"><a href="#print-shop-‘口红’-pop-2" class="headerlink" title="print(shop[‘口红’].pop(2))"></a>print(shop[‘口红’].pop(2))</h1><p>print(shop.pop(‘口红’))</p>
-<p>#删除字典中的一组数据，默认删除最后一组</p>
-<h1 id="print-shop-popitem"><a href="#print-shop-popitem" class="headerlink" title="print(shop.popitem())"></a>print(shop.popitem())</h1><p>print(shop)</p>
-
+        <p>总结<br>
+        
+          <a class="article-more-a" href="/2018/07/21/7.19元组 字典/#more">more >></a>
+        
       
 
       
