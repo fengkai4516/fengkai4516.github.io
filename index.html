@@ -324,34 +324,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>总结<br>Math数学函数</p>
-<p>#数学函数<br>import math</p>
-<p>#获取绝对值<br>print(abs(-10))</p>
-<p>#向上取整<br>print(math.ceil(2.8))</p>
-<p>#向下取整<br>print(math.floor(2.4))</p>
-<p>#求和<br>print(sum({1,2,3}))</p>
-<p>#生成序列<br>print(sum(range(5)))</p>
-<p>#获取e的x次幂<br>print(math.exp(3))</p>
-<p>#获取绝对值的浮点数<br>print(math.fabs(5))</p>
-<p>#将浮点数，分为整数和小数部分，小数部分是一个完整的小数<br>print(math.modf(6.855))</p>
-<p>#对浮点数进行四舍五入，保留小数点后几位<br>print(round(6.855,2))</p>
-<p>#获取常量π<br>print(math.pi)</p>
-<p>#获取常量e<br>print(math.e)</p>
-<p>#使用del删除元素，删除多个时，中间用逗号隔开，在列表中删除一个元素之后，会重新将内容的下标排序<br>var1=1<br>var2=2<br>del var2,var1<br>print(var1)<br>Math随机函数<br>Import.random()</p>
-<p>#random()获取0-1之间的随机数，包含0，不包含1<br>ran=math.floor(random.random()<em>11)#</em>floor(max-min+1)+min</p>
-<p>#choice随机获取列表中的一个元素<br>ran1=random.choice(range(10))<br>ran1=[‘胡辣汤’,’豆腐脑’,’油条’,’煎饼果子’,’鸡蛋饼’]<br>print(random.choice(ran1))</p>
-<p>#将序列中的所有元素随机排序，获取固定下标的值，类似于choice，随机获取<br>random.shuffle(ran1)<br>print(ran1[0])</p>
-<p>#获取指定范围内的随机整数，间隔值默认为1，可以定义起始值；如果只写一个参数表示从0开始到指定数值，不包含数值本身<br>print(random.randrange(100,1000,2))</p>
-<p>#随机返回一个整数，包含开始值和结束值<br>print(random.randint(5,7))</p>
-<p>#随机生成下一个实数（小数），它在[x,y]范围内，包含边界值<br>print(random.uniform(1,10))</p>
-<p>#原型打印内容<br>str1=’hello wworld’<br>print(str1) #hello wworld<br>print(repr(str1)) #’hello wworld’</p>
-<p>#把字符串当做py代码执行<br>print(eval(repr(str1)))</p>
-<p>#locals表示当前环境中的所有变量，如果在函数中，稚嫩获取函数中的变量<br>def one():<br>a=’123’<br>b=’456’<br>print(locals())<br>one()<br>类型相关函数：int,float,bool,str,list,tuple,set,dict,complex<br>变量相关：type,id,print<br>数学函数:abs，round，sum,min,max,pow,range,repr,eval,locals<br>进制<br>bin,oct,hex,ord,chr</p>
-<p>#使用operator代替之前的cmp，对两个变量进行对比，返回值为bool值<br>import operator<br>list1=[12,45,78,75]<br>list2=[12,45,78]<br>print(operator.gt(list1,list2))</p>
-<p>列表（访问、添加、修改、删除）<br>创建的序列操作（相加+，相乘*，索引操作：下标，切片：，成员检测 in/not in）<br>Len(list)列表元素个数 max（）最大值 min（）最小值<br>list（sep）将其他类型转换为列表<br>列表的方法操作<br>list.append(obj)<br>在列表末尾添加新的对象<br>list.insert(index, obj)<br>将对象插入列表<br>list.clear()<br>清空列表<br>List.copy<br>复制列表<br>List.count(obj)<br>统计某个元素在列表中出现的次数<br>list.extend(seq)<br>在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表）<br> list.index(obj)<br>从列表中找出某个值第一个匹配项的索引位置<br>list.pop([index=-1])<br>移除列表中的一个元素（默认最后一个元素），并且返回该元素的值<br>list.remove(obj)<br>移除列表中某个值的第一个匹配项<br>Del<br>del语句删除某个特定位置的元素，从列表中删除切片或清空整个列表<br>list.reverse()<br>反向列表中元素<br>list.sort(cmp=None, key=None, reverse=False<br>对原列表进行排序</p>
-<p>例：<br>li=[‘zhangsan’,’lisi’,’wangwu’,’liliu’,’zhuqi’]<br>1、计算列表的长度并输出<br>print(len(li))</p>
-<h1 id="2、列表中追加元素’wangba’-并输出添加后的列表"><a href="#2、列表中追加元素’wangba’-并输出添加后的列表" class="headerlink" title="2、列表中追加元素’wangba’,并输出添加后的列表"></a>2、列表中追加元素’wangba’,并输出添加后的列表</h1><p>li.append(‘wangba’)<br>print(li)<br>3、请在列表的第1个位置插入元素’Tony’,并输出添加后的列表<br>li.insert(0,’Tony’)<br>print(li)<br>4、请修改列表第2个位置的元素为’Kelly’,并输出修改后的列表<br>del li[1]<br>li.insert(1,’kelly’)<br>print(li)<br>5、请将列表l2=[1,’a’,3,4,’heart’]的每一个元素添加到列表li中，一行代码实现，不允许循环添加<br>l2=[1,’a’,3,4,’heart’]<br>li.extend(l2)<br>print(li)<br>6、请将字符串s = ‘qwert’的每一个元素添加到列表li中，一行代码实现，不允许循环添加<br>s=’qwert’<br>[li.append(i) for i in s]<br>print(li)<br>7、请删除列表中的元素’wangwu’,并输出删除后的列表<br>del li[2]<br>print(li)<br>8、请删除列表中的第2个元素，并输出删除的元素和删除元素后的列表<br>print(li.pop(1))<br>print(li)<br>9、请删除列表中的第2至4个元素，并输出删除元素后的列表<br>del li[1:4]<br>print(li)<br>10、请将列表所有得元素反转，并输出反转后的列表<br>li.reverse()<br>print(li)<br>11、请计算出‘zhangsan’元素在列表li中出现的次数，并输出该次数<br>print(li.count(‘zhangsan’))<br>列表的遍历<br>For-in遍历<br>While遍历<br>二级列表遍历<br>列表=[[值1,值2],[值1,值2,值3],[值1]]<br>    for   变量1   in   列表：<br>        for   变量2   in   变量1：<br>            使用变量2（变量2是二级列表中的每个值）<br>列表比较<br>import operator<br>operator.ge()         大于等于<br>operator.gt()         大于<br>operator.eq()       等于<br>operator.ne()        不等于<br>operator.le()           小于等于<br>operator.lt()          小于<br>Sorted(列表)对列表进行升序排序<br>Reverse（列表）其等于Ture则表示按降序排序，是对列表进行逆序排序</p>
-
+        <p>总结<br>
+        
+          <a class="article-more-a" href="/2018/07/21/7.18math 列表/#more">more >></a>
+        
       
 
       
