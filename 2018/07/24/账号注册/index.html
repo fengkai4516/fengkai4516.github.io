@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>7.16 字符串 | Hexo</title>
+  <title>账号注册，登录 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="总结">
-<meta name="keywords" content="总结">
+  <meta name="description" content="设计一个简单的账号注册，登录功能程序">
+<meta name="keywords" content="小程序">
 <meta property="og:type" content="article">
-<meta property="og:title" content="7.16 字符串">
-<meta property="og:url" content="http://yoursite.com/2018/07/21/7.16字符串/index.html">
+<meta property="og:title" content="账号注册，登录">
+<meta property="og:url" content="http://yoursite.com/2018/07/24/账号注册/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="总结">
+<meta property="og:description" content="设计一个简单的账号注册，登录功能程序">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-23T08:41:34.716Z">
+<meta property="og:updated_time" content="2018-07-24T11:17:54.023Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="7.16 字符串">
-<meta name="twitter:description" content="总结">
+<meta name="twitter:title" content="账号注册，登录">
+<meta name="twitter:description" content="设计一个简单的账号注册，登录功能程序">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -155,36 +155,29 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-7.16字符串" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-账号注册" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      7.16 字符串
+      账号注册，登录
     </h1>
   
 
         
-        <a href="/2018/07/21/7.16字符串/" class="archive-article-date">
-  	<time datetime="2018-07-21T03:27:44.161Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-21</time>
+        <a href="/2018/07/24/账号注册/" class="archive-article-date">
+  	<time datetime="2018-07-24T09:27:37.757Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p> 总结<br><a id="more"></a><br>①’GNU\’s Not %s %%’  % ‘UNIX’  引号中\’代表单引号<br>②元组定义主要看有没有‘,’()可有可无<br>③Python中0*<em>0==1<br>④虚部必须后缀j，不一定是小写   j可以大写<br>⑤创建list类型用：时键名用（）<br>⑥字符串格式化<br>序列    含义<br>%c    格式化字符及其ASCII码<br>%s    格式化字符串<br>%d    格式化整数<br>%u    格式化无符号整型<br>%o    格式化无符号八进制数<br>%x    格式化无符号十六进制数<br>%X    格式化无符号十六进制数（大写）<br>%f    格式化浮点数字，可指定小数点后的精度<br>%e    用科学计数法格式化浮点数<br>%E    作用同%e，用科学计数法格式化浮点数<br>%g    %f和%e的简写<br>%G    %f 和 %E 的简写<br>%p    用十六进制数格式化变量的地址<br>字符串运算符<br>    +、</em>、[]、[:]、in、not in、r/R、%</p>
-<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><h3 id="字符串大小转换"><a href="#字符串大小转换" class="headerlink" title="字符串大小转换"></a>字符串大小转换</h3><p>string string.capitalize()<br>将字符串的第一个字母变成大写,其他字母变小写<br>string str.title()<br>所有单词都是以大写开始，其余字母均为小写<br>string str.upper()<br>将字符串中的小写字母转为大写字母<br>string str.lower()<br>字符串中所有大写字符为小写<br>string str.swapcase()<br>对字符串的大小写字母进行转换</p>
-<p>###字符串内容查找<br>string len(string)<br>计算字符串长度<br>string str.count()<br>计算指定字符串出现的次数<br>string str.find(str, beg=0, end=len(string))<br>查找指定字符串第一次出现的位置，找不到返回-1<br>string str.index(str, beg=0, end=len(string))<br>跟find()方法一样，只不过如果str不在 string中会报一个异常（str找不到）<br>Bool str.startswith(str, beg=0,end=len(string))<br>检测字符串是否以指定的字符串开头<br>Bool str.endswith(str, beg=0,end=len(string))<br>检测字符串是否以指定的字符串结尾</p>
-<p>###字符串内容检测<br>bool str.isupper()<br>检测字符串中所有的字母是否都为大写<br>bool str.islower()<br>检测字符串是否由小写字母组成<br>bool str.isalnum()<br>检测字符串是否由字母和数字组成，空字符串为false<br>bool str.isalpha()<br>检测字符串是否只由字母组成，带符号返回false<br>bool str.isdigit()<br>检测字符串是否只由数字组成（只识别十进制），空字符串为false<br>bool isspace()<br>检测字符串是否只由空格组成<br>bool str.istitle()<br>检测字符串中所有的单词拼写首字母是否为大写，且其他字母为小写<br>bool str.isnumeric()<br>检测字符串是否只由数字组成。定义一个字符串为Unicode，只需要在字符串前添加 ‘u’ 前缀即可</p>
-<p>###位运算符<br>&lt;&lt; 左移运算符   当用左移运算符时数值扩大两倍                       </p>
-<blockquote>
-<blockquote>
-<p>右移运算符     用右移运算符时遇0时数值缩小两倍，遇1时floor（向下取整，缩小两倍）<br>想要得到一个精确值可以使用-decimal模块</p>
-</blockquote>
-</blockquote>
+        <p>设计一个简单的账号注册，登录功能程序<br><a id="more"></a><br>def logon():<br>    time=0<br>    while  time&lt;3:<br>        name=input(‘请输入您的用户名：’)<br>        mima=input(‘请输入您的密码：’)<br>        if name.find(‘<em>‘):<br>            name=’’.join(name.split(‘</em>‘))<br>            if name==’zhangsan’ and mima==’123465*’:<br>                print(‘登录成功’)<br>                break<br>            else:<br>                print(‘用户名或者密码输入错误’)<br>            time+=1<br>    else:<br>        print(‘您已输错三次，账户被锁定’)</p>
+<p>def zhuce():<br>    board = [‘摇头丸’,’你大爷’,’王八蛋’]<br>    name=input(‘请输入您的用户名：’)<br>    mima=input(‘请输入您的密码：’)<br>    for i in board:<br>        if i in name:<br>            name=name.replace(i,len(i)<em>‘</em>‘)<br>    account=[{‘name’:name,’mima’:mima}]<br>    print(account)</p>
+<p>dowork=[‘注册’,’登录’]<br>for i,j in enumerate(dowork,1):<br>    print(i,j)<br>xuhao=input(‘请选择功能:’)<br>if xuhao==’1’:<br>    zhuce()<br>elif xuhao==’2’:<br>    logon()<br>else:<br>    print(‘你操作有误’)</p>
 
       
 
@@ -219,7 +212,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">小程序</a>
         		</li>
       		
 		</ul>
@@ -275,7 +268,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/21/7.16字符串/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/24/账号注册/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -289,18 +282,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/07/24/7.23函数/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          7.23  函数（1）
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/07/21/7.17 字符串用法补充/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">7.17 字符串用法补充</div>
+    <a href="/2018/07/24/7.23函数/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">7.23  函数（1）</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -327,7 +311,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#字符串"><span class="toc-number">1.</span> <span class="toc-text">字符串</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#字符串大小转换"><span class="toc-number">1.1.</span> <span class="toc-text">字符串大小转换</span></a></li></ol></li></ol>
+                    目录，不存在的…
                     </div>
                 </span>
             </div>
