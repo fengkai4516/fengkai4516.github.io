@@ -6,20 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>账号注册，登录 | Hexo</title>
+  <title>Archives: 2018/8 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="设计一个简单的账号注册，登录功能程序">
-<meta name="keywords" content="小程序">
-<meta property="og:type" content="article">
-<meta property="og:title" content="账号注册，登录">
-<meta property="og:url" content="http://yoursite.com/2018/07/24/账号注册/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/archives/2018/08/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="设计一个简单的账号注册，登录功能程序">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-24T11:20:32.029Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="账号注册，登录">
-<meta name="twitter:description" content="设计一个简单的账号注册，登录功能程序">
+<meta name="twitter:title" content="Hexo">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -155,56 +150,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-账号注册" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      账号注册，登录
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/08/03/购物车/" class="archive-article-date">
+  	<time datetime="2018-08-03T11:11:54.613Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-03</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/08/03/购物车/">购物车</a>
     </h1>
   
 
-        
-        <a href="/2018/07/24/账号注册/" class="archive-article-date">
-  	<time datetime="2018-07-24T09:27:37.757Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>设计一个简单的账号注册，登录功能程序<br><a id="more"></a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">def logon():</span><br><span class="line">    time=0</span><br><span class="line">    <span class="keyword">while</span>  time&lt;3:</span><br><span class="line">        name=input(<span class="string">'请输入您的用户名：'</span>)</span><br><span class="line">        mima=input(<span class="string">'请输入您的密码：'</span>)</span><br><span class="line">        <span class="keyword">if</span> name.find(<span class="string">'*'</span>):</span><br><span class="line">            name=<span class="string">''</span>.join(name.split(<span class="string">'*'</span>))</span><br><span class="line">            <span class="keyword">if</span> name==<span class="string">'zhangsan'</span> and mima==<span class="string">'123465*'</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'登录成功'</span>)</span><br><span class="line">                <span class="built_in">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'用户名或者密码输入错误'</span>)</span><br><span class="line">            time+=1</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'您已输错三次，账户被锁定'</span>)</span><br><span class="line"></span><br><span class="line">def zhuce():</span><br><span class="line">    board = [<span class="string">'摇头丸'</span>,<span class="string">'你大爷'</span>,<span class="string">'王八蛋'</span>]</span><br><span class="line">    name=input(<span class="string">'请输入您的用户名：'</span>)</span><br><span class="line">    mima=input(<span class="string">'请输入您的密码：'</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> board:</span><br><span class="line">        <span class="keyword">if</span> i <span class="keyword">in</span> name:</span><br><span class="line">            name=name.replace(i,len(i)*<span class="string">'*'</span>)</span><br><span class="line">    account=[&#123;<span class="string">'name'</span>:name,<span class="string">'mima'</span>:mima&#125;]</span><br><span class="line">    <span class="built_in">print</span>(account)</span><br><span class="line"></span><br><span class="line">dowork=[<span class="string">'注册'</span>,<span class="string">'登录'</span>]</span><br><span class="line"><span class="keyword">for</span> i,j <span class="keyword">in</span> enumerate(dowork,1):</span><br><span class="line">    <span class="built_in">print</span>(i,j)</span><br><span class="line">xuhao=input(<span class="string">'请选择功能:'</span>)</span><br><span class="line"><span class="keyword">if</span> xuhao==<span class="string">'1'</span>:</span><br><span class="line">    zhuce()</span><br><span class="line"><span class="keyword">elif</span> xuhao==<span class="string">'2'</span>:</span><br><span class="line">    logon()</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'你操作有误'</span>)</span><br></pre></td></tr></table></figure></p>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -216,128 +191,19 @@
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/24/账号注册/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2018/08/03/购物车/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          购物车
-        
-      </div>
-    </a>
   
   
-    <a href="/2018/07/24/7.23函数/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">7.23  函数（1）</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    目录，不存在的…
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -360,8 +226,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
