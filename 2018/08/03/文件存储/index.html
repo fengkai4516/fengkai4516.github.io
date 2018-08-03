@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Hexo</title>
+  <title>文件存读小练习 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="利用文件存储数据，对文件信息进行修改和添加">
+<meta name="keywords" content="小程序">
+<meta property="og:type" content="article">
+<meta property="og:title" content="文件存读小练习">
+<meta property="og:url" content="http://yoursite.com/2018/08/03/文件存储/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="利用文件存储数据，对文件信息进行修改和添加">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-03T11:51:41.189Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="文件存读小练习">
+<meta name="twitter:description" content="利用文件存储数据，对文件信息进行修改和添加">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,36 +155,56 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-文件存储" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      文件存读小练习
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/03/文件存储/" class="archive-article-date">
+
+        
+        <a href="/2018/08/03/文件存储/" class="archive-article-date">
   	<time datetime="2018-08-03T11:47:24.342Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-03</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/03/文件存储/">文件存读小练习</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>利用文件存储数据，对文件信息进行修改和添加<br><a id="more"></a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br></pre></td><td class="code"><pre><span class="line">def write():</span><br><span class="line">    <span class="keyword">while</span> True:</span><br><span class="line">        name=input(<span class="string">'输入名字（退出请按n）：'</span>).strip()</span><br><span class="line">        fil=open(<span class="string">'one.txt'</span>,<span class="string">'r+'</span>)</span><br><span class="line">        file=fil.readline()</span><br><span class="line">        <span class="keyword">if</span> name==file.split()[0]:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'员工已存在'</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">if</span> name <span class="keyword">in</span> [<span class="string">'n'</span>,<span class="string">'N'</span>]:</span><br><span class="line">                <span class="built_in">return</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                money=input(<span class="string">'输入工资：'</span>).strip()</span><br><span class="line">                fil.write(name+<span class="string">' '</span>+money+<span class="string">'\n'</span>)</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'员工信息添加成功'</span>.center(30,<span class="string">'*'</span>))</span><br><span class="line">    fil.close()</span><br><span class="line"><span class="comment">#员工信息</span></span><br><span class="line">def get():</span><br><span class="line">    flag=False</span><br><span class="line">    name=input(<span class="string">'输入员工姓名：'</span>).strip()</span><br><span class="line">    <span class="keyword">while</span> True:</span><br><span class="line">        fil=open(<span class="string">'one.txt'</span>,<span class="string">'r+'</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> fil:</span><br><span class="line">            <span class="keyword">if</span> name==i.split()[0]:</span><br><span class="line">                flag=True</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'员工：&#123;&#125;    工资:&#123;&#125;'</span>.format(name,i.split()[1]))</span><br><span class="line">                <span class="built_in">return</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">continue</span></span><br><span class="line">        <span class="keyword">if</span> flag==False:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'该员工不存在'</span>.center(30,<span class="string">'*'</span>))</span><br><span class="line">            <span class="built_in">return</span></span><br><span class="line">    fil.close()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改员工信息</span></span><br><span class="line">def change(list):</span><br><span class="line">    fil=open(<span class="string">'one.txt'</span>,<span class="string">'r+'</span>)</span><br><span class="line">    <span class="keyword">while</span> True:</span><br><span class="line">        line=fil.readline()</span><br><span class="line">        <span class="keyword">if</span> line==<span class="string">''</span>:</span><br><span class="line">            <span class="built_in">break</span></span><br><span class="line">        newline=line.split()</span><br><span class="line">        list[newline[0]]=newline[1]</span><br><span class="line">    fil.close()</span><br><span class="line">    name=input(<span class="string">'输入员工姓名：'</span>).strip()</span><br><span class="line">    <span class="keyword">if</span> name not <span class="keyword">in</span> list:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'该员工不存在'</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        money=input(<span class="string">'输入员工工资：'</span>).strip()</span><br><span class="line">        <span class="keyword">if</span> money.isdigit():</span><br><span class="line">            list[name]=money</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'工资格式输入错误'</span>)</span><br><span class="line">        file=open(<span class="string">'one.txt'</span>,<span class="string">'w+'</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> list:</span><br><span class="line">            file.writelines(i+<span class="string">' '</span>+list[i]+<span class="string">'\n'</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'修改成功'</span>.center(30,<span class="string">'*'</span>))</span><br><span class="line">        file.close()</span><br><span class="line">    <span class="built_in">return</span> list</span><br><span class="line"><span class="comment"># 删除员工信息</span></span><br><span class="line">def dell(list):</span><br><span class="line">    fil=open(<span class="string">'one.txt'</span>,<span class="string">'r+'</span>)</span><br><span class="line">    <span class="keyword">while</span> True:</span><br><span class="line">        line=fil.readline()</span><br><span class="line">        <span class="keyword">if</span> line==<span class="string">''</span>:</span><br><span class="line">            <span class="built_in">break</span></span><br><span class="line">        newline=line.split()</span><br><span class="line">        list[newline[0]]=newline[1]</span><br><span class="line">    fil.close()</span><br><span class="line">    name=input(<span class="string">'输入员工姓名：'</span>).strip()</span><br><span class="line">    <span class="keyword">if</span> name <span class="keyword">in</span> list:</span><br><span class="line">        del list[name]</span><br><span class="line">        file=open(<span class="string">'one.txt'</span>,<span class="string">'w+'</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> list:</span><br><span class="line">            file.writelines(i+<span class="string">' '</span>+list[i]+<span class="string">'\n'</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'该员工已删除'</span>.center(30,<span class="string">'*'</span>))</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'该员工不存在'</span>)</span><br><span class="line">    file.close()</span><br><span class="line">    <span class="built_in">return</span> list</span><br><span class="line"></span><br><span class="line">list=&#123;&#125;</span><br><span class="line">menu=[<span class="string">'查询公司员工信息'</span>,<span class="string">'增加公司员工信息'</span>,<span class="string">'修改公司员工信息'</span>,<span class="string">'删除公司员工信息'</span>,<span class="string">'退出'</span>]</span><br><span class="line"><span class="keyword">while</span> True:</span><br><span class="line">    names=input(<span class="string">'请输入用户名：'</span>).strip()</span><br><span class="line">    <span class="built_in">pwd</span>=input(<span class="string">'请输入密码：'</span>).strip()</span><br><span class="line">    <span class="keyword">if</span> pwd.isdigit():</span><br><span class="line">        <span class="keyword">if</span> names==<span class="string">'老总'</span> and <span class="built_in">pwd</span>==<span class="string">'666666'</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'欢迎老总登陆'</span>.center(30,<span class="string">'*'</span>))</span><br><span class="line">            <span class="keyword">while</span> True:</span><br><span class="line">                <span class="keyword">for</span> i,j <span class="keyword">in</span> enumerate(menu,1):</span><br><span class="line">                    <span class="built_in">print</span>(i,j)</span><br><span class="line">                num=input(<span class="string">'请选择您要进行的操作：'</span>)</span><br><span class="line">                <span class="keyword">if</span> num.isdigit():</span><br><span class="line">                    <span class="keyword">if</span> num==<span class="string">'1'</span>:</span><br><span class="line">                        get()</span><br><span class="line">                    <span class="keyword">elif</span> num==<span class="string">'2'</span>:</span><br><span class="line">                        write()</span><br><span class="line">                    <span class="keyword">elif</span> num==<span class="string">'3'</span>:</span><br><span class="line">                        list=change(list)</span><br><span class="line">                    <span class="keyword">elif</span> num==<span class="string">'4'</span>:</span><br><span class="line">                        list=dell(list)</span><br><span class="line">                    <span class="keyword">elif</span> num==<span class="string">'5'</span>:</span><br><span class="line">                        <span class="built_in">exit</span>()</span><br><span class="line">                    <span class="keyword">else</span>:</span><br><span class="line">                        <span class="built_in">print</span>(<span class="string">'输入有误，请重新输入'</span>)</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    <span class="built_in">print</span>(<span class="string">'输入有误，请重新输入'</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'权限不足'</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'密码输入有误，请重新输入'</span>)</span><br></pre></td></tr></table></figure></p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,364 +216,118 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/03/文件存储/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/03/药品存销/" class="archive-article-date">
-  	<time datetime="2018-08-03T11:29:16.486Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-03</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/08/03/药品存销/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">药品存销</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/03/药品存销/">药品存销</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">小程序</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/03/博客园/" class="archive-article-date">
-  	<time datetime="2018-08-03T11:23:37.862Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-03</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/03/博客园/">博客园</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">小程序</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/03/购物车/" class="archive-article-date">
-  	<time datetime="2018-08-03T11:11:54.613Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/03/购物车/">购物车</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">小程序</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/24/账号注册/" class="archive-article-date">
-  	<time datetime="2018-07-24T09:27:37.757Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/24/账号注册/">账号注册，登录</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">小程序</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/24/7.23函数/" class="archive-article-date">
-  	<time datetime="2018-07-24T07:17:57.831Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/24/7.23函数/">7.23  函数（1）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/21/7.16字符串/" class="archive-article-date">
-  	<time datetime="2018-07-21T03:27:44.161Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/21/7.16字符串/">7.16 字符串</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/21/7.17 字符串用法补充/" class="archive-article-date">
-  	<time datetime="2018-07-21T03:27:43.634Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/21/7.17 字符串用法补充/">7.17 字符串用法补充</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/21/7.18math 列表/" class="archive-article-date">
-  	<time datetime="2018-07-21T03:27:42.569Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/21/7.18math 列表/">7.18  math 列表</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/21/7.19元组 字典/" class="archive-article-date">
-  	<time datetime="2018-07-21T03:27:32.918Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/21/7.19元组 字典/">7.19  元组  字典</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -572,8 +351,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
